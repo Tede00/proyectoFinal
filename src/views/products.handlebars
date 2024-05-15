@@ -1,0 +1,62 @@
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-md-4 ">
+            <form id="Form" class="card card-body rounded-2 bg-light " onsubmit="createProduct(event)">
+                <h1 class="h3 mb-5">Agregar Producto</h1>
+                <input
+                id="title"
+                type="text"
+                name="title"
+                placeholder="Nombre del producto"
+                class="form-control rounded-2 mb-3"
+                autofocus
+                />
+
+                <textarea
+                name="description"
+                id="description"
+                rows="2"
+                placeholder="Descripcion"
+                class="form-control rounded-2 mb-3"
+                ></textarea>
+
+                <input
+                id="price"
+                type="text"
+                name="price"
+                placeholder="Precio de producto"
+                class="form-control rounded-0 mb-3"
+                />
+                <input
+                id="code"
+                type="text"
+                name="code"
+                placeholder="Codigo"
+                class="form-control rounded-2 mb-3"
+                />
+                <input
+                id="stock"
+                type="text"
+                name="stock"
+                placeholder="Stock"
+                class="form-control rounded-2 mb-3"
+                />
+                <input
+                id="category"
+                type="text"
+                name="category"
+                placeholder="Categoria"
+                class="form-control rounded-2 mb-3"
+                />
+                <button class="btn btn-dark rounded-2" type="submit" id="submit">Cargar</button>
+            </form>
+        </div>
+
+        <div id="productos" class="d-flex col-md-8 py-3 flex-wrap">
+            {{!-- Rendered by code --}}
+        </div>
+    <div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/products.js"></script>

@@ -1,0 +1,13 @@
+<main>
+    
+{{#if products}}
+    {{#each products}}
+                <div>
+                    <p>Nombre{{this.title}}</p>
+                    <p>Precio {{this.precio}}</p>
+                </div>
+    {{/each}}
+{{/if }}
+</main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/public/js/home.js"></script>
